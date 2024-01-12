@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <title>Raghav Babbar</title>
+    <style>
+        body{
+            width: 100%;
+            margin: 0px 0px 0px 0px;
+        }
+        #welcome{
+            margin-top: 70px;
+            padding-left: 100px;
+            margin-bottom: 100px;
+            font-size: 55px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+        }
+        #pfp{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+        #intro{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        #intro_text{
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #hello{
+            font-size: 18px;
+            font-family: 'DM Sans', sans-serif;
+            color: #626262;
+            margin-bottom: 0px;
+        }
+        #name{
+            font-size: 38px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            margin-top: 40px;
+            margin-bottom: 0px;
+        }
+        #job{
+            font-size: 22px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        #logos{
+            display: flex;
+        }
+        .logo{
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #about_section{
+            background-color: #12131a;
+            color: white;
+            height: 600px;
+            padding-top: 70px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #abtme_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #abtme1{
+            font-size: 20px;
+            font-family: 'DM Sans', sans-serif;
+            color: #626262;
+            font-weight: 400;
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
+        #abtme2{
+            font-size: 35px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+        #abt_boxes{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        #exp{
+            border: 1px solid white;
+            border-radius: 40px;
+            height: 260px;
+            width: 450px;
+            margin-top: 50px;
+            margin-right: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #edu{
+            border: 1px solid white;
+            border-radius: 40px;
+            height: 260px;
+            width: 450px;
+            margin-top: 50px;
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #explogo{
+            filter: invert();
+            height: 50px;
+            width: 50px;
+        }
+        #exp1{
+            font-size: 20px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+        #exp2{
+            font-size: 17px;
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(138, 138, 138);
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #exp3{
+            font-size: 17px;
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(138, 138, 138);
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        #edulogo{
+            filter: invert();
+            height: 50px;
+            width: 50px;
+        }
+        #edu1{
+            font-size: 20px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+        #edu2{
+            font-size: 17px;
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(138, 138, 138);
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #edu3{
+            font-size: 17px;
+            font-family: 'DM Sans', sans-serif;
+            text-align: center;
+            color: rgb(138, 138, 138);
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        #edu4{
+            font-size: 17px;
+            font-family: 'DM Sans', sans-serif;
+            color: rgb(138, 138, 138);
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        @media screen and (max-width: 1000px) {
+            #welcome{
+                text-align: center;
+                padding-left: 0px;
+            }
+        }
+        @media screen and (max-width: 1122px) {
+            #about_section{
+                height: 900px;
+            }
+            #abt_boxes{
+                flex-direction: column;
+            }
+            #exp{
+                margin-right: 0px;
+            }
+            #edu{
+                margin-left: 0px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            #exp{
+                width: 350px;
+            }
+            #edu{
+                width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="welcome">Welcome</h1>
+    <div id="intro">
+        <img src="pfp.jpg" alt="pfp" id="pfp">
+        <div id="intro_text">
+            <h2 id="hello">Hello, I'm</h2>
+            <h1 id="name">Raghav Babbar</h1>
+            <h2 id="job">Frontend Developer</h2>
+            <div id="logos">
+                <a href="https://www.linkedin.com/in/raghav-babbar-755a66244/" target="_blank">
+                    <img src="linkedin.png" alt="linkedin" class="logo">
+                </a>
+                <a href="https://github.com/Raghav112233" target="_blank">
+                    <img src="github.png" alt="github" class="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="about_section">
+        <div id="abtme_block">
+            <h3 id="abtme1">Get to know</h3>
+            <h2 id="abtme2">About Me</h2>
+        </div>
+        <div id="abt_boxes">
+            <div id="exp">
+                <img src="experience.png" alt="exp" id="explogo">
+                <p id="exp1">Experience</p>
+                <p id="exp2">1.5+ yrs of Frontend Development</p>
+                <p id="exp3">6+ months of Android Development</p>
+            </div>
+            <div id="edu">
+                <img src="education.png" alt="edu" id="edulogo">
+                <p id="edu1">Education</p>
+                <p id="edu2">B.Tech Computer Science Engineering</p>
+                <p id="edu3">Sophomore at Vellore Institute of Technology</p>
+                <p id="edu4">(Vellore Campus)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
