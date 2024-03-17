@@ -53,6 +53,7 @@
             margin-top: 40px;
             margin-bottom: 0px;
             text-align: center;
+            height: 50px;
         }
         #job{
             font-size: 22px;
@@ -245,12 +246,12 @@
     </style>
 </head>
 <body>
-    <h1 id="welcome">Welcome</h1>
+    <h1 id="welcome">Welcome &#128075;</h1>
     <div id="intro">
         <img src="pfp.jpg" alt="pfp" id="pfp">
         <div id="intro_text">
             <h2 id="hello">Hello, I'm</h2>
-            <h1 id="name">Raghav Babbar</h1>
+            <h1 id="name"></h1>
             <h2 id="job">Frontend Developer</h2>
             <div id="logos">
                 <a href="https://www.linkedin.com/in/raghav-babbar-755a66244/" target="_blank">
@@ -283,5 +284,14 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#name", {strings: ["Developer", "Student","Raghav Babbar"],
+        typeSpeed : 40,
+        backSpeed : 40,
+        backDelay : 1500,
+        showCursor : false
+        })
+    </script>
 </body>
 </html>
