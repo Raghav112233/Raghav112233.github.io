@@ -22,7 +22,7 @@
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     pointer-events: none;
     -webkit-backdrop-filter: invert();
@@ -39,8 +39,8 @@
     z-index: 1;
     opacity: 0;
     pointer-events: none;
-    -webkit-backdrop-filter: invert();
-    backdrop-filter: invert();
+    background-color: #12131a;
+    border: 2px solid white;
 }
 a {
     cursor: none;
