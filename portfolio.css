@@ -91,10 +91,12 @@ body{
 }
 #download_cv{
     display: flex;
+    gap: 7px;
     line-height: 50px;
     height: 50px;
     text-align: center;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     background-color: #12131a;
     border: 1px solid #12131a;
@@ -109,6 +111,13 @@ body{
     color: white;
     transition: background-color 0.5s, color 0.5s;
 }
+#dwnldlogo{
+    height: 17px;
+    width: 17px;
+    filter: invert();
+    background: transparent;
+    transition: filter 0.5s;
+}
 #contact_sc:hover{
     background-color: white;
     color: #12131a;
@@ -116,6 +125,11 @@ body{
 #download_cv:hover{
     background-color: white;
     color: #12131a;
+}
+#download_cv:hover  #dwnldlogo{
+    background-color: white;
+    color: #12131a;
+    filter: none;
 }
 #head_links{
     display: flex;
